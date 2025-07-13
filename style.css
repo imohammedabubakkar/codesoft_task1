@@ -1,0 +1,288 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Navbar */
+.navbar {
+  background: #1e1e2f;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.navbar .logo span {
+  color: #00b894;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #00b894;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Hero Section */
+.hero {
+  background: #fff;
+  padding: 60px 0;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  color: #1e1e2f;
+}
+
+.hero-text span {
+  color: #00b894;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.hero-img img {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: #00b894;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #019670;
+}
+
+.scroll-down {
+  margin-top: 20px;
+  font-size: 28px;
+  color: #00b894;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+/* About Section */
+.about-section {
+  background: #f1f1f1;
+  padding: 60px 0;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-img img {
+  max-width: 250px;
+  border-radius: 15px;
+}
+
+.about-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about-text .intro {
+  margin-bottom: 20px;
+}
+
+.about-list {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.about-list li {
+  margin-bottom: 10px;
+}
+
+/* Fancy Button */
+.fancy-btn {
+  background: #1e1e2f;
+  color: #fff;
+  border: 2px solid #1e1e2f;
+}
+
+.fancy-btn:hover {
+  background: transparent;
+  color: #1e1e2f;
+}
+
+/* Skills Section */
+.skills-section {
+  background: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.skill-box {
+  padding: 15px 25px;
+  background: #00b894;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: transform 0.3s;
+}
+
+.skill-box:hover {
+  transform: scale(1.05);
+}
+
+/* Projects Section */
+.projects-section {
+  background: #f9f9f9;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.project-card {
+  background: #fff;
+  padding: 20px;
+  border-left: 5px solid #00b894;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  text-align: left;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-tag {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00b894;
+  font-weight: 600;
+}
+
+/* Contact Section */
+.contact-section {
+  background: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.contact-info a {
+  color: #00b894;
+  text-decoration: none;
+}
+
+/* WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.whatsapp-float img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s;
+}
+
+.whatsapp-float img:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+.footer {
+  background: #1e1e2f;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content, .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    background: #
